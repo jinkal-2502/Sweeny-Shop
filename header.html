@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweeny Bakery</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #333;
+      padding: 15px 30px;
+      color: white;
+    }
+
+    /* Logo styling */
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    /* Navigation menu styling */
+    nav ul {
+      list-style-type: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      position: relative;
+      margin-right: 30px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* Dropdown menu styles */
+    nav ul li ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #444;
+      padding: 10px 20px;
+      list-style-type: none;
+      border-radius: 5px;
+      z-index: 10;
+    }
+
+    nav ul li:hover > ul {
+      display: block;
+    }
+
+    nav ul li ul li {
+      margin: 10px 0;
+    }
+
+    /* Order button styling */
+    .order-btn {
+      background-color: #ff8c00;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .order-btn:hover {
+      background-color: #e07b00;
+    }
+
+    /* Icon container */
+    .icon-container {
+      display: flex;
+      gap: 20px;
+    }
+
+    .icon-container i {
+      font-size: 20px;
+      color: white;
+      cursor: pointer;
+    }
+
+    /* Tagline styling */
+    .tagline {
+      text-align: center;
+      font-size: 20px;
+      color: #555;
+      margin-top: 20px;
+      padding: 10px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <div class="logo">
+      Sweeny
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li>
+          <a href="#">Pages</a>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Our Team</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Locator</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Order Button and Icons -->
+    <div class="icon-container">
+      <button class="order-btn">Order Now</button>
+      <i class="fas fa-shopping-cart"></i>
+      <i class="fas fa-user"></i>
+      <i class="fas fa-heart"></i>
+    </div>
+  </header>
+
+  <!-- Tagline Section -->
+  <div class="tagline">
+    All Classic & Ancient Flavor Pastries. Freshly Baked Pastries, Fruit Pastries, Cookies, Chocolate, and More. A Great Selection of Wonderful World's Favorite Pastries.
+  </div>
+
+</body>
+</html>

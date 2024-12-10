@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color: #73C8BD;
+    --primary-color-rgb: 115, 200, 189;
+    --primary-color-500: #4CA397;
+    --primary-color-500-rgb: 76, 163, 151;
+    --primary-color-600: #39A0A7;
+    --primary-color-600-rgb: 57, 160, 167;
+    --secondary-color: #5a3956;
+    --secondary-color-rgb: 90, 57, 86;
+    --white: #fff;
+    --black: #000;
+    --black-rgb: 0, 0, 0;
+    --pink-color: #fd85b2;
+    --pink-color-rgb: 253, 133, 178;
+    --yellow-color: #eac76f;
+    --yellow-color-rgb: 234, 199, 111;
+    --purple-color: #a8a3d8;
+    --purple-color-rgb: 168, 163, 216;
+    --text-color: #303030;
+    --text-color-rgb: 48, 48, 48;
+    --title-font: 'Rowdies'; 
+    --description-font: 'Outfit';
+    --fs: 16px;
+    --lh: 1.5;
+    --fw: 400;
+    --gw: 15px; 
+}
+body{
+    background-color: var(--white);
+    color: var(--text-color);
+    font-family: var(--description-font);
+    font-size: var(--fs);
+    font-weight: var(--fw);
+    line-height: var(--lh);
+}
+a{
+    text-decoration: none;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+ul,ol{
+    padding-left: 0;
+    list-style: none;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--title-font);
+}
+h2{
+    font-size: 50px;
+    font-weight: 400;
+}
+.container{
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--gw);
+    padding-right: var(--gw);
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--gw));
+    margin-right: calc(-1 * var(--gw));
+}
+.col-1{
+    width: 8.3333%;
+}
+.col-2{
+    width: 16.6666%;
+}
+.col-3{
+    width: 25%;
+}
+.col-4{
+    width: 33.3333%;
+}
+.col-5{
+    width: 41.6666%;
+}
+.col-6{
+    width: 50%;
+}
+.col-7{
+    width: 58.3333%;
+}
+.col-8{
+    width: 66.6666%;
+}
+.col-9{
+    width: 75%;
+}
+.col-10{
+    width: 83.3333%;
+}
+.col-11{
+    width: 91.6666%;
+}
+.col-12{
+    width: 100%;
+}
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12{
+    padding-left: var(--gw);
+    padding-right: var(--gw);
+} 
